@@ -8,6 +8,7 @@ body {
 
 .logo {
     height: 7.22vh;
+    min-height: 75px;
 }
 
 .logo-div {
@@ -25,6 +26,7 @@ body {
     font-weight: normal;
     color: #252525;
     margin: 0;
+    line-height: 1.04;
 }
 
 .mail-box {
@@ -32,12 +34,12 @@ body {
     margin-left: 10vw;
 
     width: 610px;
-    height: 125px;
+    height: 115px;
 
     border: 1px solid #e1e1e1;
-    box-shadow: 0 0 100px 0px #d7d7d7;
-    -moz-box-shadow: 0 0 100px 0px #d7d7d7;
-    -webkit-box-shadow: 0 0 100px 0px #d7d7d7;
+    box-shadow: 0 0 30px 0px #e1e1e1;
+    -moz-box-shadow: 0 0 30px 0px #e1e1e1;
+    -webkit-box-shadow: 0 0 30px 0px #e1e1e1;
     
     border-radius: 5px;
     color: #252525;
@@ -102,6 +104,15 @@ body {
 }
 
 @media screen and (max-width: 1366px) {
+
+    .logo {
+        min-height: 55px;
+    }
+
+    .description p{
+        line-height: 1.1;
+    }
+    
     .mail-box {
         width: 467;
     }
@@ -124,12 +135,12 @@ body {
     }
     
     .logo {
-        height: 40px;
+        height: 60px;
     }
 
     .description {
         margin-top: 11.812vh;
-        margin-left: 20px;
+        margin-left: 30px;
     }
     
     .description p{
@@ -138,9 +149,9 @@ body {
     
     .mail-box {
         margin-top: 4.73vh;
-        margin-left: 20px;
+        margin-left: 30px;
     
-        width: calc(100% - 40px);
+        width: calc(100% - 60px);
         height: 146px;
     }
     
