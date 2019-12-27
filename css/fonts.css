@@ -12,7 +12,7 @@
 
 
 @font-face {
-  font-family: 'Styrene B Web';
+  font-family: Styrene B Web;
   src: url('StyreneB-Bold-Web.woff2') format('woff2'),
        url('StyreneB-Bold-Web.woff') format('woff');
   font-weight:  700;
@@ -21,7 +21,7 @@
 }
 
 .StyreneB-Bold-Web {
-  font-family: 'Styrene B Web';
+  font-family: Styrene B Web;
   font-weight:  700;
   font-style:   normal;
   font-stretch: normal;
@@ -29,7 +29,7 @@
 
 
 @font-face {
-  font-family: 'Styrene B Web';
+  font-family: Styrene B Web;
   src: url('StyreneB-Regular-Web.woff2') format('woff2'),
        url('StyreneB-Regular-Web.woff') format('woff');
   font-weight:  400;
@@ -38,7 +38,7 @@
 }
 
 .StyreneB-Regular-Web {
-  font-family: 'Styrene B Web';
+  font-family: Styrene B Web;
   font-weight:  400;
   font-style:   normal;
   font-stretch: normal;

@@ -1,5 +1,36 @@
+/* PC */
+html {
+    height: 100%;
+}
+
 body {
-    margin: 0;
+    height: 100%;
+    font-family: 'Styrene B Web' !important;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.flex {
+    display: flex;
+}
+
+.styrene {
+    font-family: 'Styrene B Web' !important;
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+h3, h5 {
+    font-family: Arial, Helvetica, sans-serif !important;
 }
 
 .center {
@@ -8,16 +39,21 @@ body {
 
 .logo {
     height: 7.22vh;
-    min-height: 75px;
 }
 
 .logo-div {
-    margin-top: 40px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px;
 }
 
 .description {
-    margin-top: 14.1666666667vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
     margin-left: 10vw;
+    min-height: 400px;
 }
 
 .description p{
@@ -34,7 +70,7 @@ body {
     margin-left: 10vw;
 
     width: 610px;
-    height: 115px;
+    height: 125px;
 
     border: 1px solid #e1e1e1;
     box-shadow: 0 0 30px 0px #e1e1e1;
@@ -56,10 +92,14 @@ body {
     width: 410px;
     height: 45px;
 
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: 35px;
 
     float: left;
+}
+
+.red-back {
+    background: #f00;
 }
 
 .mail {
@@ -81,40 +121,152 @@ body {
     outline: none;
 }
 
+.alert {
+    color: red;
+}
+
 .send {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: 25px;
-
-    width: 105px;
-    height: 45px;
-    
-    border: none;
-    border-radius: 22px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #252525;
-    font-weight: bold;
-
-    font-family: 'Styrene B Web';
-    outline: none;
+    border: 1px solid #222 !important;
+    font-size: 18px !important;
+    font-weight: 100;
+    padding: 9px 20px !important;
 }
 
 .send:hover {
     background-color: #525252;
 }
 
-@media screen and (max-width: 1366px) {
+.btn-round {
+    color: #222;
+    padding: 3px;
+    border: 1px solid #222;
+    border-radius: 30px;
+    font-size: 30px;
+    background-color: #fff;
+    outline: none;
 
+    box-shadow: 0 0 10px 0px #ccc;
+    -moz-box-shadow: 0 0 10px 0px #ccc;
+    -webkit-box-shadow: 0 0 10px 0px #ccc;
+}
+
+.btn-round:hover {
+    padding: 2px;
+    border: 2px solid #222;
+
+    background-color: #fff;
+    outline: none;
+
+    box-shadow: 0 0 8px 0px #888;
+    -moz-box-shadow: 0 0 8px 0px #888;
+    -webkit-box-shadow: 0 0 8px 0px #888;
+}
+
+.btn-round:active {
+    color: #fff;
+    background-color: #000;
+}
+
+.btn-round[disabled] {
+    color: #ccc;
+    background: #eee;
+    border: 1px solid #ccc;
+}
+
+.btn-round[disabled]:hover {
+    padding: 3px;
+}
+
+.btn-long {
+    width: 360px;
+}
+
+.btn-huge {
+    width: 450px;
+}
+
+.btn-short {
+    width: 150px;
+    border: 1px solid #222;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.btn-big {
+    width: 200px;
+    font-size: 32px;
+}
+
+.dash-border {
+    border-bottom: 1px dashed #aaa;
+    margin: 0 10px;
+}
+
+.login, .logout {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.log-user {
+    color: #000;
+    font-size: 14px;
+}
+
+.log-user:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.img-user {
+    width: 25px;
+    margin-left: 10px;
+}
+
+/* PC */
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
     .logo {
         min-height: 55px;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    .logo {
+        height: 48px;
+    }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 769px) {
+    .mail-box {
+        height: 115px;
+    }
+    
+    .mail-border {
+        margin-top: 35px;
+    }
+
+    .send {
+        margin-top: 35px;
+    }
+    
+}
+
+/* Big tablet */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    
+    .logo {
+        height: 60px;
     }
 
     .description p{
         line-height: 1.1;
+        font-size: 7.4vw;
     }
     
     .mail-box {
-        width: 467;
+        width: 467px;
     }
 
     .mail-border {
@@ -128,19 +280,47 @@ body {
 
 }
 
+/* Small tablet */
 @media screen and (max-width: 768px) {
 
+    .logo {
+        height: 60px;
+    }
+
+    .description p{
+        line-height: 1.1;
+    }
+    
+    .mail-box {
+        width: 467px;
+    }
+
+    .mail-border {
+        width: 282px;
+        margin-left: 25px;
+    }
+
+    .mail {
+        width: 280px;
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 560px) {
+    
     .logo-div {
         margin-top: 20px;
     }
     
     .logo {
-        height: 60px;
+        height: 40px;
     }
 
     .description {
         margin-top: 11.812vh;
-        margin-left: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     
     .description p{
@@ -148,10 +328,9 @@ body {
     }
     
     .mail-box {
-        margin-top: 4.73vh;
-        margin-left: 30px;
+        margin: 4.73vh 20px 20px;
     
-        width: calc(100% - 60px);
+        width: calc(100% - 40px);
         height: 146px;
     }
     
@@ -180,4 +359,639 @@ body {
         font-size: 15px;
     }
     
+}
+
+/* Mobile */
+@media screen and (max-width: 340px) {
+    
+    .description {
+        margin-top: 11.812vh;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .description p{
+        font-size: 7.4vw;
+    }
+    
+}
+
+/* Login */
+.form-user {
+    text-align: center;
+    max-width: 360px;
+    width: 25%;
+    margin: 45px auto 10px;
+    padding: 45px;
+    border: 1px dashed #707070;
+}
+
+.form-control{
+    border: 1px solid #cccccc !important;
+    height: 40px !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-control:focus {
+    border-color: #575757 !important;
+    box-shadow: none !important;
+}
+
+.has-error .form-control {
+    border-color: #f00 !important;
+    box-shadow: none !important;
+}
+
+.red-text {
+    color: #f00;
+}
+
+.alert-required {
+    color: #f00;
+}
+
+.alert-text {
+    border: 1px solid #f00 !important;
+}
+
+.btn-black {
+    width: 170px !important;
+    background-color: #191919 !important;
+    color: #fff !important;
+    height: 45px !important;
+    border-radius: 22px !important;
+    outline: none !important;
+}
+
+.btn-black:hover {
+    background-color: #525252;
+}
+
+.user-action {
+    max-width: 360px;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.user-action a{
+    color: #2aadff;
+    text-decoration: none;
+}
+
+.user-action a:hover{
+    color: #2aadff;
+}
+
+.s_username {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.popup {
+    border: 1px solid #777;
+    width: 80px;
+    position: absolute;
+    right: 30px;
+    text-align: right;
+    padding: 5px;
+    background: #fff;
+}
+
+.divider {
+    border-top: 1px solid #b8b8b8;
+    margin: 5px 0;
+}
+
+.desc {
+    margin-left: 25%;
+    margin-top: 45px;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.desc p{
+    margin: 0;
+}
+
+.desc p.bottom {
+    width: 50px;
+    margin-top: 18px;
+    border-bottom: 1px solid #707070;
+}
+
+.desc-main {
+    float: left;
+    font-size: 17px;
+    margin-right: 40px;
+    color: #bbbbbb;
+}
+
+.desc-main p{
+    margin: 0;
+}
+
+.desc-main p.bottom{
+    width: 50px;
+    margin-top: 12px;
+    border-bottom: 1px solid #707070;
+}
+
+.desc-main.active {
+    color: #000;
+}
+
+.content-main {
+    margin: 30px auto;
+    width: 34%;
+}
+
+.step2 {
+    margin: 80px auto 0;
+    width: 50%;
+}
+
+.step-title {
+    margin: 40px 0 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.step-title.red-text {
+    border-bottom: 1px solid #f00;
+}
+
+.step2 .value{
+    margin-top: 6px;
+    color: #191919;
+}
+
+.step2 .value:hover{
+    cursor: pointer;
+}
+
+.step2 .optional {
+    font-size: 12px;
+    font-weight: normal;
+    position: absolute;
+    margin: 0;
+}
+
+.btn-send {
+    margin-top: 20px;
+}
+
+/* User update 2 */
+.brief {
+    margin-top: 23px;
+    margin-left: 50px;
+}
+
+.brief-summary {
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.div-process {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+}
+
+.dash-content {
+    border: 2px dashed #777;
+    padding: 80px 0;
+}
+
+.job {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.job textarea {
+    width: 100%;
+}
+
+.job .alert-danger {
+    display: none;
+}
+
+.job-type {
+    border: 1px solid #ccc;
+    padding: 12px 24px;
+    margin-top: -1px;
+}
+
+.job-size {
+    border: 1px solid #ccc;
+    padding: 12px 24px;
+    margin-top: -1px;
+    height: 84px;
+}
+
+.job-size.first {
+    pointer-events: none;
+}
+
+.job-size.first .checkmark {
+    border-color: gray;
+}
+
+.job-size.first span {
+    color: gray;
+}
+
+.job-product {
+    border: 1px solid #ccc;
+    padding: 8px 24px;
+    margin-top: -1px;
+}
+
+.row3-item {
+    width: 31%;
+    float: left;
+    margin-right: 2%;
+    border-bottom: 2px dashed #ccc;
+    margin-bottom: 30px;
+}
+
+.row3-item.first{
+    margin-left: 0;
+}
+
+.row3-item.last{
+    margin-right: 0;
+}
+
+.rect-img {
+    height: 220px;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rect-img:hover {
+    box-shadow: 0 0 10px 0 #ccc;
+    cursor: pointer;
+}
+
+.rect-img.selected {
+    box-shadow: 0 0 10px 0 #ccc;
+    cursor: pointer;
+}
+
+.rect-img a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.rect-img img{
+    border-radius: 3px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.section {
+    margin: 18px 0;
+}
+
+.step1 .input-container {
+    margin: 20px 10px 0 0;
+}
+
+.step2 .input-container {
+    margin: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.step3 .input-container {
+    margin: 10px;
+}
+
+.row3 {
+    width: 103%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+/* Customize the label (the container) */
+.input-container {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    float: left;
+  }
+  
+/* Hide the browser's default radio button */
+  .input-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid #000;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .input-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .input-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .input-container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #191919;
+  }
+
+/* Create a custom radio button */
+.checkmark-rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #666;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .input-container:hover input ~ .checkmark-rect {
+    background-color: #ccc;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark-rect:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .input-container input:checked ~ .checkmark-rect:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .input-container .checkmark-rect:after {
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    background: #191919;
+  }
+
+.step3 {
+    margin: 80px auto 0;
+    width: 50%;
+}
+
+.float-right{
+    float: right;
+}
+
+.step3 .float-right{
+    margin-top: 7px;
+}
+
+.model-link a{
+    color: #2aadff;
+}
+
+.model-link{
+    color: #2aadff;
+}
+
+.model-link:hover{
+    color: #2aadff;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.breadcrumb {
+    text-decoration: uppercase;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    font-size: 10px;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.footer a {
+    font-size: 12px;
+    font-family: bold;
+}
+
+.step1 {
+    margin-top: 60px;
+}
+
+.step1-title {
+    padding: 11px 0;
+}
+
+.step1 h1{
+    margin: 15px 0;
+}
+
+.step1 .value{
+    font-size: 43px;
+    margin-right: 20px;
+    color: #191919;
+}
+
+.step1 .value:hover{
+    cursor: pointer;
+}
+
+.step1 .float-left{
+    float: left;
+}
+
+.step1 .value-summary p{
+    margin: 3px 0;
+}
+
+.step1-border {
+    border: 1px solid #ccc;
+    padding: 12px 24px;
+    font-size: 32px;
+}
+
+.red-border-date {
+    border: 1px dashed #f00 !important;
+}
+
+.red-border-title {
+    border-top: 1px solid #f00;
+    border-left: 1px solid #f00;
+    border-right: 1px solid #f00;
+}
+
+.red-border {
+    border-left: 1px solid #f00;
+    border-right: 1px solid #f00;
+}
+
+.red-border.first {
+    border-top: 1px solid #f00;
+}
+
+.red-border.last {
+    border-bottom: 1px solid #f00;
+}
+
+.section-60p {
+    margin: 40px auto !important;
+    width: 60%;
+}
+
+.section-80p {
+    margin: 40px auto !important;
+    width: 80%;
+}
+
+.div-calendar {
+    border: 1px dashed #888;
+    padding: 30px;
+    width: 360px;
+}
+
+.div-calendar .title {
+    font-size: 32px;
+}
+
+.input-ref {
+    width: 96% !important;
+    margin-left: 4%;
+}
+
+.comment {
+    height: 200px !important;
+}
+
+.row4 {
+    display: inline-block;
+    width: 25%;
+}
+
+.shotday {
+    margin-top: 20px;
+}
+
+.shotday .datepicker {
+    margin-left: 0;
+    margin-right: 0;
+    width: 300px !important;
+    border: none;
+    font-family: 'Styrene B Web' !important;
+}
+
+.datepicker--days-names {
+    display: none !important;
+}
+
+.datepicker--day-name {
+    color: #4a4a4a !important;
+    font-size: 17px !important;
+    font-weight: bold;
+}
+
+.datepicker--nav-title {
+    font-size: 17px !important;
+}
+
+.datepicker--cell-day {
+    font-size: 20px !important;
+    height: 40px !important;
+    border-bottom: 1px solid #efefef;
+    border-radius: 0 !important;
+    margin: 5px 0;
+}
+
+.datepicker--cell.-current- {
+    color: #000 !important;
+    background: #eee !important;
+    border-radius: 50% !important;
+}
+
+.datepicker--cell.-focus- {
+    border-radius: 50% !important;
+}
+
+.datepicker--cell.-selected- {
+    color: #000 !important;
+    background: #eee !important;
+    border-radius: 50% !important;
+    font-weight: bold;
+}
+
+.h100 {
+    height: 100px;
+}
+
+.h150 {
+    height: 150px;
+}
+
+.h200 {
+    height: 200px;
+}
+
+.h300 {
+    height: 300px;
+}
+
+.step-clickable:hover {
+    cursor: pointer;
+    color: #000;
 }

@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  background: #f7f7f7;
+  font-family: sans-serif;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.hb-container {
+  max-width: 630px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.hb-container .hb-title {
+  text-align: center;
+  line-height: 60px;
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+
+.hb-container .hb-content .content-title {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}
+
+.hb-container .hb-content .hb-section {
+  margin-top: 20px;
+}
+
+.hb-container .hb-content .hb-section.first-section {
+  margin-top: 0;
+}
+
+.hb-content .hb-section .section-title {
+  direction: rtl;
+  font-size: 20px;
+  position: relative;
+}
+
+.hb-content .hb-section .section-title span.section-number {
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  transform: translateX(40px);
+}
+
+.hb-content .hb-section .section-title span.section-name {
+  text-decoration: underline;
+}
+
+.hb-content .hb-section .terms-list {
+  list-style: none;
+  margin: 20px 0 0;
+}
+
+.hb-content .hb-section .terms-list li {
+  display: flex;
+  direction: rtl;
+  margin-top: 8px;
+}
+
+.hb-content .hb-section .terms-list li.sub-section {
+  margin-right: 20px;
+}
+
+.hb-content .hb-section .terms-list li:first-child {
+  margin: 0;
+}
+
+.hb-content .hb-section .terms-list li p {
+  text-align: right;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.hb-content .hb-section .terms-list li .term-description {
+  margin-right: 10px;
+}
