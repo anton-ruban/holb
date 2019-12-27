@@ -1,4 +1,5 @@
 <?php
+require_once('if_mobile_coming_soon.php');
 // Initialize the session
 session_start();
 
@@ -139,9 +140,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
         </form>
 
-        <div class="user-action">
+        <!-- <div class="user-action">
             <a href="register.php">Create User</a>
-        </div>
+        </div> -->
 
         <div class="text-center">
             <br/>

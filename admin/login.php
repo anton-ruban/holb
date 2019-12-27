@@ -1,4 +1,5 @@
 <?php
+require_once('../if_mobile_coming_soon.php');
 // Initialize the session
 session_start();
  
@@ -138,7 +139,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="submit" class="btn btn-black form-control" value="Login">
             </div>
             <br/>
-            <p class="center">Don't have an account? <a href="register.php">Sign up now</a>.</p>
+            <!-- <p class="center">Don't have an account? <a href="register.php">Sign up now</a>.</p> -->
         </form>
 
     </div>

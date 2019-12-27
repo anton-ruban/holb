@@ -1,3 +1,7 @@
+<?php
+    require_once('if_mobile_coming_soon.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
